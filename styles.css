@@ -13,12 +13,24 @@ div {
   padding: 0;
 }
 
+nav:after {
+  clear: both;
+  content: '.';
+}
 .site-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.site-navigation_menu {
   position: fixed;
   background-color: rgba(23,2,58,.95);
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
 
 }
@@ -31,7 +43,9 @@ div {
 }
 
 .primary-nav {
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 250px;
 }
 
 .primary-nav_menu {
@@ -45,6 +59,51 @@ div {
   display: inline-block;
   position: relative;
   margin-right: -4px;
+}
+
+
+.social-media {
+  float: right;
+  margin-top: -30px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.social-media_menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px;
+  border-color: white;
+}
+
+.social-media_link {
+  float: right;
+  border: 0;
+  text-shadow: none;
+  color: transparent;
+  font: 0/0 a;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.social-nav_link_linkedin {
+  background-image: url("images/icons/linkedin.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.social-nav_link_twitter {
+  background-image: url("images/icons/twitter.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 100%;
+}
+
+.social-media_link:hover {
+  opacity: 0.7;
 }
 
 h1 {
@@ -63,7 +122,7 @@ p {
   padding: 0;
 }
 
-img {
+.headshot {
   display: block;
   padding: 14px 25px;
   width: 50%;
@@ -82,7 +141,7 @@ a:link, a:visited {
 
 /* how to change attributes for different states, i.e. pseudo-selectors */
 a:hover, a:active {
-  color: darkorchid;
+  opacity: 0.7;
   text-decoration: none;
 }
 
