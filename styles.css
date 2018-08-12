@@ -1,11 +1,16 @@
+@font-face {
+  font-family: butler;
+  src: url(fonts/butler_regular-webfont.woff);
+}
+
 body {
-  background-color: indigo;
+  background-color: rgba(23,2,58,1);
   overflow-x: hidden;
 
 }
 
 div {
-  border: red;
+  border: transparent;
   height: auto;
   width: 400px;
   margin: 0 auto;
@@ -110,8 +115,8 @@ h1 {
   color: whitesmoke;
   font-family: Butler, Georgia, Times, 'Times New Roman', serif;
   margin: 15px;
-  margin: 10;
-  padding: 10;
+  margin: 10px;
+  padding: 15px;
 
 }
 
@@ -145,16 +150,28 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+.resume-summary {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 ul {
   font-family: 'Gill Sans', Arial, Helvetica,sans-serif;
-  color: whitesmoke;
-  padding: 20px;
+  padding: 25px;
 }
 
 ul li {
-  color: goldenrod;
+  color: rgba(23,2,58,1);
   padding: 2%;
   box-align: center;
+}
+
+h2 {
+  color: whitesmoke;
+  font-family: Butler, Georgia, Times, 'Times New Roman', serif;
+  margin: 10px;
+  margin: 10px;
+  padding: 15px;
+
 }
 
 /* how to change attributes for class, e.g. class="highlight" */
